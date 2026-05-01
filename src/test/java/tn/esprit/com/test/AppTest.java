@@ -51,4 +51,10 @@ public class AppTest
     {
         assertEquals(-1, App.add(2, -3));
     }
+
+    @Test
+    public void mainMethodRuns()
+    {
+        App.main(new String[]{});
+    }
 }
