@@ -1,10 +1,14 @@
 package tn.esprit.com;
 
+import java.util.logging.Logger;
+
 public class App
 {
+    private static final Logger LOGGER = Logger.getLogger(App.class.getName());
+
     public static void main( String[] args )
     {
-        System.out.println( greet("World") );
+        LOGGER.info( greet("World") );
     }
 
     public static String greet( String name )
