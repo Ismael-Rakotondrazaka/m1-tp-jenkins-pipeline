@@ -1,5 +1,6 @@
 package tn.esprit.com;
 
+import java.util.logging.Level;
 import java.util.logging.Logger;
 
 public class App
@@ -8,7 +9,9 @@ public class App
 
     public static void main( String[] args )
     {
-        LOGGER.info( greet("World") );
+        if (LOGGER.isLoggable(Level.INFO)) {
+            LOGGER.info( greet("World") );
+        }
     }
 
     public static String greet( String name )
